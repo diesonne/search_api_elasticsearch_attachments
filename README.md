@@ -1,11 +1,3 @@
-# Customisations by Jo
-applied patches:
-- https://www.drupal.org/files/issues/2019-07-11/3053938-12.patch (Support any entity type with file fields)
-- patches/index_500000_characters_in_es_attach_instead_of_default.patch (Allow larger attachments to be fully indexed)
-- https://www.drupal.org/files/issues/2020-07-17/3159624-4.patch (D9 issues)
-- patches/elastic-attachment-fix-missing-data.patch (Force the storing the data field for ML6)
-- https://www.drupal.org/files/issues/2020-05-23/search_api_elasticsearch_attachments.6.x-dev.rector.patch (D9 compatability)
-
 # Search API Elasticsearch Attachments
 [![CircleCI](https://circleci.com/gh/dakkusingh/search_api_elasticsearch_attachments.svg?style=svg)](https://circleci.com/gh/dakkusingh/search_api_elasticsearch_attachments)
 
