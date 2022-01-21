@@ -162,6 +162,7 @@ class BuildIndexParams implements EventSubscriberInterface {
               'attachment' => [
                 'target_field' => '_ingest._value.attachment',
                 'field' => '_ingest._value.data',
+                'indexed_chars' => 500000,
               ],
             ],
           ],

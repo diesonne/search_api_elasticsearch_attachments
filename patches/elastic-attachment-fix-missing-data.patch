@@ -1,0 +1,12 @@
+diff --git a/src/EventSubscriber/PrepareIndexMapping.php	b/src/EventSubscriber/PrepareIndexMapping.php
+--- a/src/EventSubscriber/PrepareIndexMapping.php
++++ b/src/EventSubscriber/PrepareIndexMapping.php
+@@ -34,7 +34,7 @@
+     if (!empty($processors['elasticsearch_attachments'])) {
+       $indexMappingParams = $event->getIndexMappingParams();
+       // Exclude our source encoded data field from getting saved in ES.
+-      $indexMappingParams['body']['_source']['excludes'][] = 'es_attachment.data';
++//      $indexMappingParams['body']['_source']['excludes'][] = 'es_attachment.data';
+       $event->setIndexMappingParams($indexMappingParams);
+     }
+   }
