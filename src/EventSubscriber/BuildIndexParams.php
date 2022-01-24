@@ -142,7 +142,7 @@ class BuildIndexParams implements EventSubscriberInterface {
   public function initializeClient(IndexInterface $index) {
     $cluster_name = $index->getServerInstance()->getBackend()->getCluster();
     $cluster = $this->entityTypeManager->getStorage('elasticsearch_cluster')->load($cluster_name);
-    $this->client = $this->clientManager->getClientForCluster($cluster);
+    $this->client = $this->clientManager->getClient($cluster);
   }
 
   /**
